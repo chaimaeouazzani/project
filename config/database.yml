@@ -6,11 +6,3 @@ default: &default
 development:
   <<: *default
   database: scraper_development
-
-test:
-  <<: *default
-  database: scraper_test
-
-production:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
